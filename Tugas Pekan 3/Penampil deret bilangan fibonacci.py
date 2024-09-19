@@ -1,5 +1,4 @@
 def fibonacci(n):
-    # Menghasilkan deret Fibonacci hingga suku ke-n
     sequence = []
     a, b = 0, 1
     while len(sequence) < n:
@@ -8,17 +7,12 @@ def fibonacci(n):
     return sequence
 
 def main():
-    # Mengambil input dari pengguna
     try:
         N = int(input("Masukkan nilai N: "))
         if N <= 0:
             print("N harus bilangan bulat positif.")
             return
-        
-        # Menghitung deret Fibonacci
         fib_sequence = fibonacci(N)
-        
-        # Mencetak hasil dengan format yang diinginkan
         print(", ".join(map(str, fib_sequence)))
     except ValueError:
         print("Masukkan nilai yang valid.")
